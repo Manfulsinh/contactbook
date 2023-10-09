@@ -1,0 +1,61 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e0e0e0; 
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+li {
+    background: #e0e0e0;
+    border-radius: 12px;
+    margin: 12px 0;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  8px 8px 16px #bebebe, 
+               -8px -8px 16px #ffffff;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+ 
+}
+
+
+
+button:focus {
+    outline: none;
+}
+
+.edit-btn {
+    background: linear-gradient(145deg, #4dd47d, #35a64f);
+    color: white;
+}
+
+.delete-btn {
+    background: linear-gradient(145deg, #f55d5d, #d43a3a);
+    color: white;
+}
+
+li > *:not(button) {
+    margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+    li {
+        flex-direction: column;
+        align-items: start;
+    }
+}

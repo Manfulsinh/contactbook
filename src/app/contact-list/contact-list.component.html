@@ -1,0 +1,19 @@
+ <ul>
+  <li *ngFor="let contact of contacts">
+    {{ contact.name }} - {{ contact.phone }} - {{ contact.email }}
+    <button (click)="editContact(contact)">Edit</button>
+    <button (click)="deleteContact(contact.id)">Delete</button>
+  </li>
+</ul> 
+<!-- <div *ngIf="editingContact">
+  <app-contact-form [contact]="editingContact" (save)="onSave($event)"></app-contact-form>
+</div>
+
+<ul *ngIf="!editingContact">
+  <li *ngFor="let contact of contacts">
+    {{ contact.name }} - {{ contact.phone }} - {{ contact.email }}
+    <button (click)="onEdit(contact)">Edit</button>
+  <button (click)="deleteContact(contact.id)">Delete</button>
+
+  </li>
+</ul> -->

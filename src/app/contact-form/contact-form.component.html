@@ -1,0 +1,33 @@
+
+
+   <div class="container mt-4">
+    <div class="row">
+ 
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text"class="form-control" id="nameInput"[(ngModel)]="contact.name"placeholder="Name">
+            </div>
+        </div>
+        
+  
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="phoneInput">Phone</label>
+                <input type="tel" class="form-control" id="phoneInput" [(ngModel)]="contact.phone" placeholder="Phone">
+            </div>
+        </div>
+        
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input type="email" class="form-control" id="emailInput" [(ngModel)]="contact.email" placeholder="Email">
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="saveContact()">Save</button>
+</div> 
+
+
